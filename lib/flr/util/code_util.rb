@@ -102,7 +102,7 @@ class R {
         code += <<-CODE
 class AssetResource {
   /// Creates an object to hold the asset resource’s metadata.
-  const AssetResource(this.assetName, {this.packageName});
+  const AssetResource(this.assetName, {this.packageName = ""});
 
   /// The name of the main asset from the set of asset resources to choose from.
   final String assetName;
